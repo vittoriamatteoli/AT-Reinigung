@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="./favicon.ico" style="font-size: large" />
+    <script
+      src="https://kit.fontawesome.com/c38d857281.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AT Reinigung</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container2">
+      <div class="logo">
+        <img src="logo2.png" alt="logo" />
+      </div>
+    </div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact us</a>
+      <a href="">Reviews</a>
+      <a class="appointment-button" href="mailto:info@atreinigung.ch"
+        >Book now</a
+      >
+    </nav>
+    <main class="service-main">
+      <div class="video-wrapper">
+        <video playsinline autoplay muted loop>
+          <source src="production_id_4109209 (2160p).mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-text">
+        <p>Choose Us!</p>
+        <a href="mailto:info@atreinigung.ch"> Get in touch now!</a>
+        <i
+          style="height: 2px"
+          style="align-items: center"
+          class="fa-solid fa-arrow-right 10px"
+        ></i>
+      </div>
+    </main>
+    <div class="reviewscontainer">
+      <div class="reviewscontainer2">
+        <h1 class="reviewtitle">Our Happy Clients</h1>
+        <p class="reviewtext">
+          Our clients are from years satisfied with the quality of our services,
+          timing and flexibility, that's why they love us!
+        </p>
+      </div>
+      <div class="reviewscontainer3">
+        <div class="reviewblock">
+          <div class="review">
+            <div>
+              <i class="fa-solid fa-smile" style="color: yellow"></i>
+              <span>Tom Grey</span>
+            </div>
+            <ul class="review-list">
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+            </ul>
+          </div>
+          <div class="paragraph">
+            <p>
+              "I couldn't be happier with my experience! The product/service
+              exceeded my expectations. From the quality to the customer
+              service, everything was top-notch. I highly recommend it."
+            </p>
+          </div>
+        </div>
+        <div class="reviewblock">
+          <div class="review">
+            <div>
+              <i class="fa-solid fa-smile" style="color: yellow"></i>
+              <span>Jane Lou</span>
+            </div>
+            <ul>
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+            </ul>
+          </div>
+          <div class="paragraph">
+            <p>
+              "My experience with this product/service was average. It had its
+              pros and cons. While there were some positive aspects, there were
+              also areas that could use improvement."
+            </p>
+          </div>
+        </div>
+        <div class="reviewblock">
+          <div class="review">
+            <div>
+              <i class="fa-solid fa-smile" style="color: yellow"></i>
+              <span>Martin Finn</span>
+            </div>
+            <ul>
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-solid fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+              <li class="fa-regular fa-star" style="color: white"></li>
+            </ul>
+          </div>
+          <div class="paragraph">
+            <p>
+              "I give this product/service a full 5 stars! It delivered
+              everything it promised and more. I'm absolutely delighted with the
+              results. It's a must-try!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comparison-block">
+      <div class="container3">
+        <div class="comparison-description">
+          <h1 class="tiles-title">
+            Spot the Difference: Cleaning Before and After
+          </h1>
+          <p class="tiles-cleaning">
+            Tiles can be a satisfying task when done right. To start, gather
+            your supplies a gentle tile cleaner or a mix of mild detergent and
+            warm water, a soft-bristled brush or sponge, and a cloth for drying.
+          </p>
+        </div>
+        <div id="comparison">
+          <figure>
+            <div id="handle"></div>
+            <div id="divisor"></div>
+          </figure>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="slider"
+            oninput="moveDivisor()"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var divisor = document.getElementById("divisor"),
+      handle = document.getElementById("handle"),
+      slider = document.getElementById("slider");
+
+    function moveDivisor() {
+      handle.style.left = slider.value + "%";
+      divisor.style.width = slider.value + "%";
+    }
+
+    window.onload = function () {
+      moveDivisor();
+    };
+  </script>
+</html>
